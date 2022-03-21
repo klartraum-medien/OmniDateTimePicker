@@ -116,6 +116,8 @@ class _OmniDateTimePickerState extends State<OmniDateTimePicker>
                   Padding(
                     padding: const EdgeInsets.only(bottom: 48.0),
                     child: TimePickerSpinner(
+                      minutesInterval: 10,
+                      isForce2Digits: true,
                       is24HourMode: widget.is24HourMode ?? false,
                       isShowSeconds: widget.isShowSeconds ?? false,
                       normalTextStyle: widget.timeSpinnerTextStyle ??

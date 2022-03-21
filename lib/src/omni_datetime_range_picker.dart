@@ -204,6 +204,8 @@ class _OmniDateTimeRangePickerState extends State<OmniDateTimeRangePicker>
                           },
                         ),
                         TimePickerSpinner(
+                          minutesInterval: 10,
+                          isForce2Digits: true,
                           is24HourMode: widget.is24HourMode ?? false,
                           isShowSeconds: widget.isShowSeconds ?? false,
                           normalTextStyle: widget.timeSpinnerTextStyle ??
